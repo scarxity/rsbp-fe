@@ -43,7 +43,7 @@ const withSessionPersistence =
 						id: "intro",
 						role: "assistant",
 						content:
-							"Hi! I am your Robo Advisor. Ask me anything about investing, your risk profile, or portfolio allocations.",
+							"Hi! Saya adalah Robo Advisor. Silahkan tanya tentang investasi, profil risikomu, atau alokasi portofolio.",
 					},
 				];
 			}
@@ -92,7 +92,7 @@ const withSessionPersistence =
 								id: "intro",
 								role: "assistant",
 								content:
-									"Hi! I am your Robo Advisor. Ask me anything about investing, your risk profile, or portfolio allocations.",
+									"Hi! Saya adalah Robo Advisor. Silahkan tanya tentang investasi, profil risikomu, atau alokasi portofolio.",
 							},
 						];
 						updateStorage(state);

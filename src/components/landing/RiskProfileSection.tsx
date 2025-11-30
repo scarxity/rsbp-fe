@@ -1,35 +1,35 @@
 const profiles = [
 	{
-		name: "Conservative",
+		name: "Konservatif",
 		description:
-			"Prefers minimal volatility and prioritizes income stability over growth. Ideal for short-term goals and retirement withdrawals.",
-		riskScore: "Risk score: 2 / 10",
+			"Portofolio Anda akan lebih berat pada reksa dana pasar uang dan obligasi untuk menghasilkan return yang stabil di atas inflasi dengan fluktuasi minimal.",
+		riskScore: "Skor Risiko: 0 - 4",
 		allocation: [
-			{ label: "Bonds", value: 60, color: "bg-emerald-400" },
-			{ label: "Global equities", value: 25, color: "bg-blue-400" },
-			{ label: "Cash", value: 15, color: "bg-slate-300" },
+			{ label: "Reksa Dana Pasar Uang", value: 50, color: "bg-slate-300" },
+			{ label: "Reksa Dana Obligasi", value: 40, color: "bg-emerald-400" },
+			{ label: "Reksa Dana Saham", value: 10, color: "bg-blue-400" },
 		],
 	},
 	{
-		name: "Balanced",
+		name: "Moderat",
 		description:
-			"Comfortable with moderate swings, balancing capital preservation and compounding. Perfect for multi-decade wealth plans.",
-		riskScore: "Risk score: 5 / 10",
+			"Portofolio Anda akan lebih berat pada reksa dana obligasi dan pasar uang, dengan diversifikasi di reksa dana saham untuk return di atas inflasi dengan risiko moderat.",
+		riskScore: "Skor Risiko: 4 - 7",
 		allocation: [
-			{ label: "Global equities", value: 55, color: "bg-blue-400" },
-			{ label: "Multi-asset income", value: 25, color: "bg-indigo-400" },
-			{ label: "Cash & bonds", value: 20, color: "bg-emerald-400" },
+			{ label: "Reksa Dana Obligasi", value: 50, color: "bg-emerald-400" },
+			{ label: "Reksa Dana Saham", value: 40, color: "bg-blue-400" },
+			{ label: "Reksa Dana Pasar Uang", value: 10, color: "bg-slate-300" },
 		],
 	},
 	{
-		name: "Growth",
+		name: "Agresif",
 		description:
-			"Seeks aggressive appreciation, remains calm through drawdowns, and has a 10+ year horizon.",
-		riskScore: "Risk score: 8 / 10",
+			"Portofolio Anda akan lebih berat pada saham dengan sedikit diversifikasi di reksa dana obligasi untuk return maksimal jangka panjang. Anda dapat menerima fluktuasi pasar yang tinggi.",
+		riskScore: "Skor Risiko: 7 - 10",
 		allocation: [
-			{ label: "Equities", value: 70, color: "bg-blue-500" },
-			{ label: "Alternatives", value: 20, color: "bg-purple-400" },
-			{ label: "Stability sleeve", value: 10, color: "bg-emerald-400" },
+			{ label: "Reksa Dana Saham", value: 80, color: "bg-blue-500" },
+			{ label: "Reksa Dana Obligasi", value: 15, color: "bg-emerald-400" },
+			{ label: "Reksa Dana Pasar Uang", value: 5, color: "bg-slate-300" },
 		],
 	},
 ];
@@ -40,15 +40,16 @@ export default function RiskProfileSection() {
 			<div className="container space-y-8">
 				<div className="max-w-2xl">
 					<p className="text-sm uppercase tracking-[0.3em] text-primary-200">
-						Risk/return playbook
+						Profil Risiko Anda
 					</p>
 					<h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
-						See what clients receive after the questionnaire.
+						Apa itu Skor Risiko?
 					</h2>
 					<p className="mt-4 text-base text-slate-300">
-						We benchmark your answers based on our expert system to build a
-						profile along the spectrum from capital preservation to aggressive
-						growth.
+						Melalui teknologi Robo Advisor kami, Anda hanya perlu menjawab
+						beberapa pertanyaan singkat. Sistem kami akan memberikan rekomendasi
+						portofolio dengan return optimal berdasarkan riset peraih Nobel,
+						Harry Markowitz.
 					</p>
 				</div>
 				<div className="grid gap-6 lg:grid-cols-3">
@@ -67,7 +68,7 @@ export default function RiskProfileSection() {
 									</p>
 								</div>
 								<span className="rounded-full bg-white/10 px-3 py-1 text-xs text-slate-200">
-									Personalized
+									Personalisasi
 								</span>
 							</div>
 							<p className="mt-4 text-sm text-slate-300">

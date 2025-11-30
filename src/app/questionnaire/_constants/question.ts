@@ -3,46 +3,46 @@ export const questionsData = [
 		question: 1,
 		name: "question1" as const,
 		label:
-			"1. In general, how would your best friend describe you as a risk taker?",
+			"1. Secara umum, bagaimana sahabat Anda menggambarkan Anda dalam hal pengambilan risiko?",
 		options: [
-			{ value: "A", label: "A real gambler" },
+			{ value: "A", label: "Seorang pengambil risiko sejati (gambler)" },
 			{
 				value: "B",
-				label: "Willing to take risks after completing adequate research",
+				label: "Bersedia mengambil risiko setelah melakukan riset yang memadai",
 			},
-			{ value: "C", label: "Cautious" },
-			{ value: "D", label: "A real risk avoider" },
+			{ value: "C", label: "Hati-hati" },
+			{ value: "D", label: "Sangat menghindari risiko" },
 		],
 	},
 	{
 		question: 2,
 		name: "question2" as const,
 		label:
-			"2. You are on a TV game show and can choose one of the following; which would you take?",
+			"2. Anda berada di acara kuis TV dan dapat memilih salah satu dari berikut ini; mana yang akan Anda ambil?",
 		options: [
-			{ value: "A", label: "$1,000 in cash" },
-			{ value: "B", label: "A 50% chance at winning $5,000" },
-			{ value: "C", label: "A 25% chance at winning $10,000" },
-			{ value: "D", label: "A 5% chance at winning $100,000" },
+			{ value: "A", label: "$1.000 tunai" },
+			{ value: "B", label: "Peluang 50% untuk memenangkan $5.000" },
+			{ value: "C", label: "Peluang 25% untuk memenangkan $10.000" },
+			{ value: "D", label: "Peluang 5% untuk memenangkan $100.000" },
 		],
 	},
 	{
 		question: 3,
 		name: "question3" as const,
 		label:
-			'3. You have just finished saving for a "once-in-a-lifetime" vacation. Three weeks before you plan to leave, you lose your job. You would:',
+			'3. Anda baru saja selesai menabung untuk liburan "sekali seumur hidup". Tiga minggu sebelum keberangkatan, Anda kehilangan pekerjaan. Apa yang akan Anda lakukan?',
 		options: [
-			{ value: "A", label: "Cancel the vacation" },
-			{ value: "B", label: "Take a much more modest vacation" },
+			{ value: "A", label: "Membatalkan liburan" },
+			{ value: "B", label: "Mengambil liburan yang jauh lebih sederhana" },
 			{
 				value: "C",
 				label:
-					"Go as scheduled, reasoning that you need the time to prepare for a job search",
+					"Pergi sesuai jadwal, dengan alasan bahwa Anda butuh waktu untuk mempersiapkan pencarian kerja",
 			},
 			{
 				value: "D",
 				label:
-					"Extend your vacation, because this might be your last chance to go first-class",
+					"Memperpanjang liburan, karena ini mungkin kesempatan terakhir Anda untuk menikmati fasilitas kelas satu",
 			},
 		],
 	},
@@ -50,63 +50,67 @@ export const questionsData = [
 		question: 4,
 		name: "question4" as const,
 		label:
-			"4. If you unexpectedly received $20,000 to invest, what would you do?",
+			"4. Jika Anda secara tidak terduga menerima $20.000 untuk diinvestasikan, apa yang akan Anda lakukan?",
 		options: [
 			{
 				value: "A",
 				label:
-					"Deposit it in a bank account, money market account, or insured CD",
+					"Menyetorkannya ke rekening bank, rekening pasar uang, atau sertifikat deposito (CD) berasuransi",
 			},
 			{
 				value: "B",
-				label: "Invest it in safe high-quality bonds or bond mutual funds",
+				label:
+					"Menginvestasikannya dalam obligasi aman berkualitas tinggi atau reksa dana obligasi",
 			},
-			{ value: "C", label: "Invest it in stocks or stock mutual funds" },
+			{
+				value: "C",
+				label: "Menginvestasikannya dalam saham atau reksa dana saham",
+			},
 		],
 	},
 	{
 		question: 5,
 		name: "question5" as const,
 		label:
-			"5. In terms of experience, how comfortable are you investing in stocks or stock mutual funds?",
+			"5. Dalam hal pengalaman, seberapa nyaman Anda berinvestasi dalam saham atau reksa dana saham?",
 		options: [
-			{ value: "A", label: "Not at all comfortable" },
-			{ value: "B", label: "Somewhat comfortable" },
-			{ value: "C", label: "Very Comfortable" },
+			{ value: "A", label: "Sama sekali tidak nyaman" },
+			{ value: "B", label: "Agak nyaman" },
+			{ value: "C", label: "Sangat nyaman" },
 		],
 	},
 	{
 		question: 6,
 		name: "question6" as const,
 		label:
-			'6. When you think of the word "risk," which of the following words comes to mind first?',
+			'6. Ketika Anda memikirkan kata "risiko", kata mana yang muncul pertama kali di benak Anda?',
 		options: [
-			{ value: "A", label: "Loss" },
-			{ value: "B", label: "Uncertainty" },
-			{ value: "C", label: "Opportunity" },
-			{ value: "D", label: "Thrill" },
+			{ value: "A", label: "Kerugian" },
+			{ value: "B", label: "Ketidakpastian" },
+			{ value: "C", label: "Peluang" },
+			{ value: "D", label: "Sensasi (Thrill)" },
 		],
 	},
 	{
 		question: 7,
 		name: "question7" as const,
 		label:
-			"7. Some experts are predicting prices of assets such as gold, jewels, collectibles, and real estate (hard assets) to increase in value. Most of your investment assets are now in high-interest government bonds. What would you do?",
+			"7. Beberapa ahli memprediksi harga aset seperti emas, perhiasan, barang koleksi, dan properti (aset riil) akan meningkat nilainya. Sebagian besar aset investasi Anda saat ini ada dalam obligasi pemerintah berbunga tinggi. Apa yang akan Anda lakukan?",
 		options: [
-			{ value: "A", label: "Hold the bonds" },
+			{ value: "A", label: "Menahan obligasi tersebut" },
 			{
 				value: "B",
 				label:
-					"Sell the bonds, put half the proceeds into money market accounts, and the other half into hard assets",
+					"Jual obligasi, masukkan setengah hasilnya ke rekening pasar uang, dan setengahnya lagi ke aset riil",
 			},
 			{
 				value: "C",
-				label: "Sell the bonds and put the total proceeds into hard assets",
+				label: "Jual obligasi dan masukkan seluruh hasilnya ke aset riil",
 			},
 			{
 				value: "D",
 				label:
-					"Sell the bonds, put all the money into hard assets, and borrow additional money to buy more",
+					"Jual obligasi, masukkan semua uang ke aset riil, dan pinjam uang tambahan untuk membeli lebih banyak lagi",
 			},
 		],
 	},
@@ -114,24 +118,25 @@ export const questionsData = [
 		question: 8,
 		name: "question8" as const,
 		label:
-			"8. Given the best and worst case returns of the four investment choices below, which would you prefer?",
+			"8. Mengingat pengembalian kasus terbaik dan terburuk dari empat pilihan investasi di bawah ini, mana yang lebih Anda sukai?",
 		options: [
-			{ value: "A", label: "$200 gain best case; $0 gain/loss worst case" },
-			{ value: "B", label: "$800 gain best case, $200 loss worst case" },
-			{ value: "C", label: "$2,600 gain best case, $800 loss worst case" },
-			{ value: "D", label: "$4,800 gain best case, $2,400 loss worst case" },
+			{ value: "A", label: "Untung $200 (terbaik); Untung/Rugi $0 (terburuk)" },
+			{ value: "B", label: "Untung $800 (terbaik); Rugi $200 (terburuk)" },
+			{ value: "C", label: "Untung $2.600 (terbaik); Rugi $800 (terburuk)" },
+			{ value: "D", label: "Untung $4.800 (terbaik); Rugi $2.400 (terburuk)" },
 		],
 	},
 	{
 		question: 9,
 		name: "question9" as const,
 		label:
-			"9. In addition to whatever you own, you have been given $1,000. You are now asked to choose between:",
+			"9. Selain apa pun yang Anda miliki, Anda telah diberi $1.000. Anda sekarang diminta untuk memilih antara:",
 		options: [
-			{ value: "A", label: "A sure gain of $500" },
+			{ value: "A", label: "Keuntungan pasti sebesar $500" },
 			{
 				value: "B",
-				label: "A 50% chance to gain $1,000 and a 50% chance to gain nothing.",
+				label:
+					"Peluang 50% untuk untung $1.000 dan peluang 50% untuk tidak untung apa-apa.",
 			},
 		],
 	},
@@ -139,12 +144,13 @@ export const questionsData = [
 		question: 10,
 		name: "question10" as const,
 		label:
-			"10. In addition to whatever you own, you have been given $2,000. You are now asked to choose between:",
+			"10. Selain apa pun yang Anda miliki, Anda telah diberi $2.000. Anda sekarang diminta untuk memilih antara:",
 		options: [
-			{ value: "A", label: "A sure loss of $500" },
+			{ value: "A", label: "Kerugian pasti sebesar $500" },
 			{
 				value: "B",
-				label: "A 50% chance to lose $1,000 and a 50% chance to lose nothing.",
+				label:
+					"Peluang 50% untuk rugi $1.000 dan peluang 50% untuk tidak rugi apa-apa.",
 			},
 		],
 	},
@@ -152,37 +158,37 @@ export const questionsData = [
 		question: 11,
 		name: "question11" as const,
 		label:
-			"11. Suppose a relative left you an inheritance of $100,000, stipulating in the will that you invest ALL the money in ONE of the following choices. Which one would you select?",
+			"11. Seandainya seorang kerabat mewariskan $100.000 kepada Anda, dengan syarat dalam wasiat bahwa Anda harus menginvestasikan SEMUA uang tersebut dalam SATU pilihan berikut. Mana yang akan Anda pilih?",
 		options: [
 			{
 				value: "A",
-				label: "A savings account or money market mutual fund",
+				label: "Rekening tabungan atau reksa dana pasar uang",
 			},
-			{ value: "B", label: "A mutual fund that owns stocks and bonds" },
-			{ value: "C", label: "A portfolio of 15 common stocks" },
-			{ value: "D", label: "Commodities like gold, silver, and oil" },
+			{ value: "B", label: "Reksa dana yang memiliki saham dan obligasi" },
+			{ value: "C", label: "Portofolio berisi 15 saham biasa (common stocks)" },
+			{ value: "D", label: "Komoditas seperti emas, perak, dan minyak" },
 		],
 	},
 	{
 		question: 12,
 		name: "question12" as const,
 		label:
-			"12. If you had to invest $20,000, which of the following investment choices would you find most appealing?",
+			"12. Jika Anda harus menginvestasikan $20.000, pilihan investasi mana yang menurut Anda paling menarik?",
 		options: [
 			{
 				value: "A",
 				label:
-					"60% in low-risk investments, 30% in medium-risk investments, 10% in high-risk investments",
+					"60% di investasi risiko rendah, 30% di investasi risiko sedang, 10% di investasi risiko tinggi",
 			},
 			{
 				value: "B",
 				label:
-					"30% in low-risk investments, 40% in medium-risk investments, 30% in high-risk investments",
+					"30% di investasi risiko rendah, 40% di investasi risiko sedang, 30% di investasi risiko tinggi",
 			},
 			{
 				value: "C",
 				label:
-					"10% in low-risk investments, 40% in medium-risk investments, 50% in high-risk investments",
+					"10% di investasi risiko rendah, 40% di investasi risiko sedang, 50% di investasi risiko tinggi",
 			},
 		],
 	},
@@ -190,12 +196,12 @@ export const questionsData = [
 		question: 13,
 		name: "question13" as const,
 		label:
-			"13. Your friend and neighbor, an experienced geologist, is putting together a group of investors to fund an exploratory gold mining venture. If successful, the venture could pay back 50 to 100 times the investment. Your friend estimates the chance of success is only 20%. If you had the money, how much would you invest?",
+			"13. Teman dan tetangga Anda, seorang ahli geologi berpengalaman, sedang mengumpulkan sekelompok investor untuk mendanai usaha eksplorasi pertambangan emas. Jika berhasil, usaha tersebut dapat memberikan hasil 50 hingga 100 kali lipat dari investasi. Teman Anda memperkirakan peluang keberhasilannya hanya 20%. Jika Anda punya uangnya, berapa banyak yang akan Anda investasikan?",
 		options: [
-			{ value: "A", label: "Nothing" },
-			{ value: "B", label: "One month's salary" },
-			{ value: "C", label: "Three month's salary" },
-			{ value: "D", label: "Six month's salary" },
+			{ value: "A", label: "Tidak sama sekali" },
+			{ value: "B", label: "Gaji satu bulan" },
+			{ value: "C", label: "Gaji tiga bulan" },
+			{ value: "D", label: "Gaji enam bulan" },
 		],
 	},
 ];

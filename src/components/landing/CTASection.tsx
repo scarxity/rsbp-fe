@@ -13,14 +13,16 @@ export default function CTASection({ questionnaireHref }: CTASectionProps) {
 					<div className="relative z-10 grid gap-8 lg:grid-cols-[3fr,2fr]">
 						<div>
 							<p className="text-sm uppercase tracking-[0.3em] text-white/70">
-								Ready to invest smarter?
+								Siap untuk investasi yang lebih cerdas?
 							</p>
 							<h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-								Start your questionnaire and receive a risk profile in minutes.
+								Isi kuisionernya dan dapatkan profil risikomu dalam beberapa
+								menit.
 							</h2>
 							<p className="mt-4 text-base text-white/80">
-								No hassle. Just few minutes away, actionable allocations, and an
-								AI teammate who never sleeps.
+								Gak pake ribet. Cuma butuh beberapa menit buat dapet alokasi
+								investasi yang bisa langsung kamu coba, plus asisten AI yang
+								siap bantu kapan aja.
 							</p>
 						</div>
 						<div className="flex flex-col justify-center gap-4">
@@ -28,11 +30,10 @@ export default function CTASection({ questionnaireHref }: CTASectionProps) {
 								href={questionnaireHref}
 								className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-base font-semibold text-primary-600 transition hover:bg-slate-100"
 							>
-								Start questionnaire
+								Mulai Kuisioner
 							</Link>
 							<p className="text-sm text-white/80">
-								Need guidance first? Click the chat bubble to talk with the robo
-								advisor.
+								Masih bingung? Klik ikon chat untuk ngobrol bareng Robo Advisor.
 							</p>
 						</div>
 					</div>

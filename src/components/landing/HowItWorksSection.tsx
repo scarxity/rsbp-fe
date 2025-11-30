@@ -1,23 +1,23 @@
 const steps = [
 	{
-		title: "01. Answer the questionnaire",
+		title: "01. Isi Kuisioner",
 		description:
-			"The questionnaire reveal your tolerance for risk, risk profile, and investment horizon under 5 minutes",
+			"Kuisioner akan mengungkap toleransi risiko, profil risiko, dan alokasi portofolio Anda dalam waktu kurang dari 5 menit.",
 	},
 	{
-		title: "02. Receive your risk profile",
+		title: "02. Dapatkan Profil Risiko Anda",
 		description:
-			"We score your answers based on rules from experts and mapped it into personas such as Conservative, Moderate, or Aggressive with reasoning.",
+			"Sistem pakar kami akan menilai jawaban Anda dan memetakannya ke dalam profil risiko seperti Konservatif, Moderat, atau Agresif, lengkap dengan penjelasannya.",
 	},
 	{
-		title: "03. Receive your allocation recommendation",
+		title: "03. Terima Rekomendasi Alokasi",
 		description:
-			"Based on your risk profile, we provide portfolio allocation recommendation based on modern portfolio theory.",
+			"Berdasarkan profil risiko Anda, kami memberikan rekomendasi alokasi portofolio yang optimal sesuai dengan prinsip Modern Portfolio Theory.",
 	},
 	{
-		title: "04. Ask our AI Chatbot",
+		title: "04. Tanya Jawab dengan AI Chatbot",
 		description:
-			"Learn more about investment and your risk profile using our AI Chatbot. It's available 24/7 to help you understand investing better.",
+			"Pelajari lebih lanjut tentang investasi dan profil risiko Anda menggunakan Chatbot AI kami yang didukung oleh RAG.",
 	},
 ];
 
@@ -30,15 +30,15 @@ export default function HowItWorksSection() {
 			<div className="container space-y-8">
 				<div className="max-w-2xl">
 					<p className="text-sm uppercase tracking-[0.3em] text-primary-200">
-						How it works
+						Cara Kerja
 					</p>
 					<h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
-						Four steps to move from uncertainty to confident investing.
+						Dapatkan hasil dengan mengikuti 4 langkah ini.
 					</h2>
 					<p className="mt-4 text-base text-slate-300">
-						Each section is wrapped into modular components so your team can
-						reorder, reuse, or A/B test experiences without touching the core
-						logic.
+						Setiap langkah dirancang untuk memandu Anda secara sistematis,
+						memberikan kejelasan dan fondasi yang kuat untuk keputusan investasi
+						Anda.
 					</p>
 				</div>
 				<div className="grid gap-6 lg:grid-cols-2">

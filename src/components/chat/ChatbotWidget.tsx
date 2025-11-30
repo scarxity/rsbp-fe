@@ -28,7 +28,7 @@ export default function ChatbotWidget() {
 
 	const placeholder = useMemo(
 		() =>
-			"Ask for rebalancing advice, portfolio explanations, or savings tips...",
+			"Tanya tentang rebalancing, penjelasan portofolio, atau tips menabung...",
 		[],
 	);
 
@@ -87,7 +87,7 @@ export default function ChatbotWidget() {
 				className="fixed bottom-6 right-6 z-30 inline-flex items-center gap-2 rounded-full bg-primary-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-500/40 transition hover:bg-primary-400"
 			>
 				<span className="h-2 w-2 animate-pulse rounded-full bg-white" />
-				Robo advisor chat
+				Chat Robo-Advisor
 			</Button>
 			{isOpen && (
 				<div className="fixed inset-0 z-40 flex items-end justify-end bg-black/40 px-4 pb-6 pt-10 sm:items-center sm:justify-center">
@@ -95,13 +95,13 @@ export default function ChatbotWidget() {
 						<header className="flex items-center justify-between border-b border-slate-100 px-6 py-4">
 							<div>
 								<p className="text-xs uppercase tracking-[0.3em] text-primary-500">
-									Smart guidance
+									Panduan Cerdas
 								</p>
 								<h3 className="text-lg font-semibold text-slate-900">
-									Financial Copilot
+									Asisten Keuangan AI
 								</h3>
 								<p className="text-xs text-slate-500">
-									Ask anything about investing.
+									Tanya apapun tentang investasi.
 								</p>
 							</div>
 							<Button
@@ -133,7 +133,7 @@ export default function ChatbotWidget() {
 							{isThinking && (
 								<div className="flex items-center gap-2 rounded-2xl bg-slate-100 px-4 py-3 text-sm text-slate-500">
 									<Loader size={16} className="animate-spin" />
-									Thinking
+									Berpikir...
 								</div>
 							)}
 						</div>
@@ -160,7 +160,7 @@ export default function ChatbotWidget() {
 									disabled={isThinking || !input.trim()}
 									className="rounded-2xl bg-primary-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-primary-400"
 								>
-									Send
+									Kirim
 								</button>
 							</div>
 							<div className="mt-2 text-right">
@@ -170,7 +170,7 @@ export default function ChatbotWidget() {
 									variant="ghost"
 									className="text-xs text-red-500 hover:text-red-600"
 								>
-									Clear conversation
+									Hapus percakapan
 								</Button>
 							</div>
 						</form>

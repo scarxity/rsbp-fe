@@ -79,14 +79,15 @@ export default function QuestionnairePage() {
 							href="/"
 							className="text-sm uppercase flex items-center gap-2 hover:font-semibold transition-all duration-300 tracking-[0.3em] text-primary-200"
 						>
-							<ArrowLeft /> Back to Home
+							<ArrowLeft /> Kembali ke Beranda
 						</Link>
 						<h1 className="text-4xl font-semibold leading-tight text-white">
-							Risk Tolerance Questionnaire
+							Kuisioner Toleransi Risiko
 						</h1>
 						<p className="text-lg text-slate-300">
-							Please select the option that best describes you for each of the
-							13 questions. This assessment will determine your risk profile.
+							Silakan pilih opsi yang paling menggambarkan Anda untuk
+							masing-masing dari 13 pertanyaan. Penilaian ini akan menentukan
+							profil risiko Anda.
 						</p>
 					</div>
 				)}
@@ -132,7 +133,7 @@ export default function QuestionnairePage() {
 									className="w-full rounded-xl"
 									isLoading={isPending}
 								>
-									Submit Questionnaire
+									Kirim Kuisioner
 								</Button>
 							</div>
 						</form>
