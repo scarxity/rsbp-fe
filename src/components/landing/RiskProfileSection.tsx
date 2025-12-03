@@ -13,7 +13,7 @@ const profiles = [
 	{
 		name: "Moderat",
 		description:
-			"Portofolio Anda akan lebih berat pada reksa dana obligasi dan pasar uang, dengan diversifikasi di reksa dana saham untuk return di atas inflasi dengan risiko moderat.",
+			"Portofolio Anda akan lebih berat pada reksa dana pasar uang dan obligasi, dengan diversifikasi di reksa dana saham untuk return di atas inflasi dengan risiko moderat.",
 		riskScore: "Skor Risiko: 4 - 7",
 		allocation: [
 			{ label: "Reksa Dana Obligasi", value: 50, color: "bg-emerald-400" },
@@ -24,7 +24,7 @@ const profiles = [
 	{
 		name: "Agresif",
 		description:
-			"Portofolio Anda akan lebih berat pada saham dengan sedikit diversifikasi di reksa dana obligasi untuk return maksimal jangka panjang. Anda dapat menerima fluktuasi pasar yang tinggi.",
+			"Portofolio Anda akan lebih berat pada saham dengan sedikit diversifikasi di obligasi untuk return maksimal jangka panjang. Anda dapat menerima fluktuasi pasar yang tinggi.",
 		riskScore: "Skor Risiko: 7 - 10",
 		allocation: [
 			{ label: "Reksa Dana Saham", value: 80, color: "bg-blue-500" },

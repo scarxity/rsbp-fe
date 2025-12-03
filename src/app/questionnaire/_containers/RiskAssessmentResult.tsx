@@ -12,10 +12,27 @@ export default function RiskAssessmentResult({
 	data: RiskAssessResponse;
 	onRetake: () => void;
 }) {
+	const labelMap: Record<string, string> = {
+		money_market: "Reksa Dana Pasar Uang",
+		obligation: "Obligasi",
+		stocks: "Saham",
+	};
+
+	const profileDescriptions: Record<string, string> = {
+		Konservatif:
+			"Portofolio Anda akan lebih berat pada reksa dana pasar uang dan obligasi untuk menghasilkan return yang stabil di atas inflasi dengan fluktuasi minimal.",
+		Moderat:
+			"Portofolio Anda akan lebih berat pada reksa dana pasar uang dan obligasi, dengan diversifikasi di reksa dana saham untuk return di atas inflasi dengan risiko moderat.",
+		Agresif:
+			"Portofolio Anda akan lebih berat pada saham dengan sedikit diversifikasi di obligasi untuk return maksimal jangka panjang. Anda dapat menerima fluktuasi pasar yang tinggi.",
+	};
+
+	const profileDescription = profileDescriptions[data.profile] ?? "";
+
 	const pieData = useMemo(
 		() =>
 			Object.entries(data.allocations).map(([key, value]) => ({
-				name: key.replace(/_/g, " ").toUpperCase(),
+				name: labelMap[key] ?? key.replace(/_/g, " ").toUpperCase(),
 				value,
 			})),
 		[data.allocations],
@@ -23,18 +40,34 @@ export default function RiskAssessmentResult({
 
 	return (
 		<div className="space-y-12">
-			<h1 className="text-5xl font-bold leading-tight text-primary-400">
-				Your Risk Profile: {data.profile}
-			</h1>
-			<p className="text-xl text-slate-300">
-				Based on your answers, your risk profile is determined as
-				{data.profile}. Your overall score is {data.risk_profile_score}/10 (GL
-				Score: {data.gl_score}).
-			</p>
+			<div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-primary-500/20 via-slate-900 to-slate-950 p-8 text-center shadow-2xl">
+				<div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-primary-500/30 blur-3xl" />
+				<div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-secondary-400/20 blur-3xl" />
+				<p className="relative text-sm uppercase tracking-[0.3em] text-primary-200">
+					Hasil Analisis
+				</p>
+				<h1 className="relative mt-4 text-4xl font-bold leading-tight text-white sm:text-5xl">
+					Profil Risikomu:{" "}
+					<span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
+						{data.profile}
+					</span>
+				</h1>
+				<div className="relative mx-auto mt-6 flex items-center justify-center gap-3">
+					<div className="flex h-16 w-16 items-center justify-center rounded-full border-4 border-primary-400 bg-white/10 text-2xl font-bold text-white">
+						{data.risk_profile_score}
+					</div>
+					<span className="text-lg text-slate-300">/ 10</span>
+				</div>
+				{profileDescription && (
+					<p className="relative mx-auto mt-6 max-w-xl text-base leading-relaxed text-slate-300">
+						{profileDescription}
+					</p>
+				)}
+			</div>
 
 			<div className="bg-white/5 p-8 rounded-xl shadow-2xl shadow-black/50">
 				<h2 className="text-2xl font-semibold mb-6 text-white">
-					Recommended Asset Allocation
+					Rekomendasi Alokasi Portofolio
 				</h2>
 				<div className="h-80 w-full mx-auto">
 					<ResponsiveContainer width="100%" height="100%">
